@@ -74,6 +74,13 @@ class DataController extends Controller
     }
 
 
+    public function formdata(){
+        $data = FormData::all();
+
+        return view('fromdata',compact('data'));
+    }
+
+
     public function createpdf(){
         // share data to view
         //return view('pdf');
@@ -94,4 +101,8 @@ class DataController extends Controller
         // download PDF file with download method
         return $pdf->download('pdf_file.pdf');
     }
+
+
+
+    
 }
