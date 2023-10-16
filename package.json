@@ -19,6 +19,8 @@
         "vue": "^3.2.37"
     },
     "dependencies": {
-        "vue-signature-pad": "^3.0.2"
+        "html2pdf.js": "^0.10.1",
+        "vue-signature-pad": "^3.0.2",
+        "vue3-html2pdf": "^1.1.2"
     }
 }

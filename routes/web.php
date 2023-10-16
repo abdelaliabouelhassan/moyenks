@@ -22,3 +22,4 @@ Route::get('/', function () {
 Route::post('/save-data',[DataController::class,'store'])->name('data.store');
 Route::get('/create-pdf',[DataController::class,'createpdf'])->name('data.createpdf');
 Route::get('/formdata',[DataController::class,'formdata'])->name('data.formdata');
+Route::post('/upload-pdf',[DataController::class,'uploadpdf'])->name('data.createpdf');

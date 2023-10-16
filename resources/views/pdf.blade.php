@@ -5,11 +5,11 @@
     </head>
     <body>
        <div>
-          <img   src="{{public_path('assets/images/logo.jpeg')}}" alt="">
+          {{-- <img   src="{{public_path('assets/images/logo.jpeg')}}" alt=""> --}}
             {{-- <img  src="{{asset('assets/images/logo.jpeg')}}" alt=""> --}}
        </div>
 
-       <p>
+       {{-- <p>
         Ja niżej podpisany/a {{$imie_nazwisko}}
         <br>
         <span>{{$ulicanr}}</span>
@@ -43,10 +43,34 @@
        <br>
        <br>
        <br>
-       <div>
-        <img   src="{{public_path('assets/images/text.jpeg')}}" alt="">
+       <div> --}}
+        {{-- <img   src="{{public_path('assets/images/text.jpeg')}}" alt=""> --}}
           {{-- <img  src="{{asset('assets/images/text.jpeg')}}" alt=""> --}}
      </div>
+
+
+     Ja niżej podpisany/a  {{$imie_nazwisko}}.
+     <br>
+
+     Zamieszkały/a w  {{$miasto}}}, {{$ulicanr}}, {{$kodpocztowy}}.
+     <br>
+     
+     Oświadczam, że w dniu 	{{$date}} sprzedałem/am firmie „Anna Staniec” Nip: 8792744469 Skąpe 29 87-140 Chełmża .
+     <br>
+     Nastepujące towary: <br>
+     {{$model}}.
+     
+     
+     
+     <br>
+     
+     Zapłacono mi kwotę  : <br>
+     {cash}.{{$suma}} <br>
+     
+     Sposób płatności: <br>
+     {{$sposob}}.
+     
+
        
     </body>
 </html>
